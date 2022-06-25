@@ -13,4 +13,8 @@ int main() {
   std::string new_name = "Hubert Dingle";
   dannynguyen.changeName(new_name);
   std::cout << dannynguyen.viewStudent(); 
+  dannynguyen.addSubject("Art");
+  std::cout << dannynguyen.viewStudent();
+  dannynguyen.removeSubject("Art");
+  std::cout << dannynguyen.viewStudent();
 }

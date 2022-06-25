@@ -15,4 +15,8 @@ class Student {
 
     void changeName(std::string new_name);
 
+    void addSubject(std::string subject, int grade=0);
+
+    void removeSubject(std::string subject);
+
 };

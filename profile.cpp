@@ -41,3 +41,14 @@ void Student::updateGrade(std::string subject, int new_grade) {
 void Student::changeName(std::string new_name) { // Replaces current name with new name.
   name = new_name;
 }
+
+void Student::addSubject(std::string subject, int grade) { // Adds a subject with a default grade of 0 to the student.
+  std::map<std::string, int> &refgrades = grades;
+  refgrades.insert({subject, grade});
+}
+
+void Student::removeSubject(std::string subject) { 
+  std::map<std::string, int> &refgrades = grades;
+  refgrades.erase(subject);
+}
+
