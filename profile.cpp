@@ -3,10 +3,9 @@
 #include "profile.hpp" 
 #include <string>
 
-Student::Student(std::string new_name, int new_age, std::map<std::string, int> new_grades) {
+Student::Student(std::string new_name, int new_age) {
   name = new_name;
   age = new_age;
-  grades = new_grades;
 }
 
 std::string Student::viewStudent() { // Displays all information about the student.

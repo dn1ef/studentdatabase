@@ -7,7 +7,7 @@ class Student {
   int age;
 
   public:
-    Student(std::string new_name, int new_age, std::map<std::string, int> new_grades);
+    Student(std::string new_name, int new_age);
 
     std::string viewStudent();
 
